@@ -2,14 +2,14 @@
 This is a Spotify Clone UI made with Vue.js.
 
 ## Screenshots
-![Image 1]('public/images/example-image-1.jpg')
+![Image 1](public/images/example-image-1.jpg)
 
 ## Technologies
-![Image 1]('public/images/vuelogo.png')
+![Image 1](public/images/vuelogo.png)
 - Vue.js
 
-![Image 1]('public/images/tailwindcsslogo.png')
-- Tailwind CSS
+## - Tailwind CSS
+![Image 1](public/images/tailwindIcon.png)
 
 
 ## Project setup
