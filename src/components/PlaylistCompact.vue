@@ -12,14 +12,21 @@
 
 <script lang="ts">
 import {defineComponent} from 'vue'
-import {faker} from '@faker-js/faker'
 
 export default defineComponent({
   name: 'PlaylistCompact',
+  props: {
+    name: {
+      type: String,
+      required: true
+    },
+    cover: {
+      type: String,
+      required: true
+    }
+  },
   data() {
     return {
-      name: faker.music.songName(),
-      cover: faker.image.urlPicsumPhotos(),
       showButtonPlay: false
     }
   },

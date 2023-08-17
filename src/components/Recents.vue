@@ -1,5 +1,5 @@
 <template>
-  <section class="mt-6 w-full h-full max-h-48 grid grid-cols-3 gap-4">
+  <section class="mt-6 w-full min-h-48 flex flex-wrap gap-4">
     <slot />
   </section>
 </template>

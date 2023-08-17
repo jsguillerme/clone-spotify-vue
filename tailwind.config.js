@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       gridTemplateColumns: {
         'two-columns': '320px 1fr',
+        'one-columns': '120px 1fr',
       },
       keyframes: {
         fadeUp: {

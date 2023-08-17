@@ -1,12 +1,9 @@
 import { createApp } from 'vue'
-
 import App from './App.vue'
 import router from './router'
-import store from './store'
-
+import {createPinia} from 'pinia'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-
 import { faUser, 
   faHouse, 
   faBook, 
@@ -28,11 +25,8 @@ import { faUser,
   faUpRightAndDownLeftFromCenter,
   faListDots
 } from '@fortawesome/free-solid-svg-icons'
-
 import {faHeart as regularHeart } from '@fortawesome/free-regular-svg-icons'
 import { faSpotify } from '@fortawesome/free-brands-svg-icons'
-
-
 
 library.add(
   faUser, 
@@ -61,4 +55,6 @@ library.add(
 
 import '@/styles/global.css'
 
-createApp(App).use(store).use(router).component('font-awesome-icon', FontAwesomeIcon).mount('#app')
+const pinia = createPinia()
+
+createApp(App).use(pinia).use(router).component('font-awesome-icon', FontAwesomeIcon).mount('#app')
